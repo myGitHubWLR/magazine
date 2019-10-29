@@ -1,0 +1,21 @@
+/* pages/index/index.wxss */
+.nav{
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 99;
+}
+.recommend{
+    margin-top:110rpx;
+    display: block;
+}
+.add{
+    margin-right: 20rpx;
+}
+
+.to-catalog{
+    display: inline-block;
+    border:1px solid black;
+    padding:10rpx 20rpx;
+    font-size: 28rpx;
+}

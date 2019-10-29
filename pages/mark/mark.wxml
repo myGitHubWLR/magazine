@@ -1,0 +1,34 @@
+<!-- pages/mark/mark.wxml -->
+<view class="container">
+    <view class="user-container">
+        <view class="user-info">
+            <view class="user-name">{{userInfo.nickName}}</view>
+            <view class="user-avatar">
+                <image wx:if="{{authorized}}" src="{{userInfo.avatarUrl}}" />
+                <imgBtn class="get-user-info" open-type="getUserInfo" bind:getuserinfo="onGetUserInfo">
+                    <image src="/images/mark/login.png" slot="img" />
+                </imgBtn>
+            </view>
+            <!-- 用于展示微信开放的数据 微信头像和名字 -->
+            <!-- <open-data type="userNickName" class="user-name"></open-data>
+            <open-data type="userAvatarUrl" class="user-avatar"></open-data> -->
+
+            <!-- 利用button open-type：getUserInfo获取用户信息 -->
+            <!-- <button wx:else class="get-user-info" open-type="getUserInfo" bind:getuserinfo="onGetUserInfo">
+                    <image src="/images/mark/login.png" />
+                </button> -->
+
+            <!-- 利用组件imgBtn -->
+        </view>
+        <view class="share">
+            <!-- <button class="share">
+                <image src="/images/mark/relay.png" />
+            </button> -->
+            <!-- 利用button open-type：share转发 -->
+            <imgBtn class="share" open-type="share">
+                <image src="/images/mark/relay.png" slot="img" />
+            </imgBtn>
+        </view> 
+    </view>
+    <articleList article-list="{{likeList}}"/>
+</view>

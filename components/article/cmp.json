@@ -1,0 +1,14 @@
+{
+  "component": true,
+  "usingComponents": {
+    "bigImg":"/components/bigImg/cmp",
+    "pureText":"/components/pureText/cmp",
+    "imgText":"/components/imgText/cmp",
+    "nineImg":"/components/nineImg/cmp",
+    "d-video":"/components/video/cmp",
+    "tag":"/components/tag/cmp",
+    "more":"/components/more/cmp",
+    "like":"/components/like/cmp",
+    "imgBtn":"/components/imgBtn/cmp"
+  }
+}

@@ -1,0 +1,16 @@
+<!-- 展示页面，通过引用组件 -->
+<nav class="nav" catch:nav="onNav"/>
+
+<recommend class="recommend" recommend="{{recommendInfo}}" magazine-id="{{magazineId}}"/>
+
+<tagList mark-list="{{markTypeList}}">
+    <!-- <view slot="before">+</view> -->
+    <add class="add" slot="before" wx:if="{{magazineId == 0}}"/>
+    <view class="to-catalog" slot="after" catch:tap="onCatalog" wx:if="{{magazineId == 0}}">...</view>
+</tagList>
+
+
+
+<articleList    article-list="{{articleList}}" 
+                more="{{getMore}}"
+                magazineId="{{magazineId}}"/>

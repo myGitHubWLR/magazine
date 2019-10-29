@@ -1,0 +1,16 @@
+
+<!-- 九宫格图片展示 -->
+<view class="container">
+    <view class="img-container">
+        <image  wx:for="{{imgArr}}"
+                wx:key="*this"
+                src="{{item}}" 
+                catch:tap="onTapImg"
+                data-index="{{index}}"
+                wx:if="{{index < 9}}"/>
+        <text class="img-num" wx:if="{{index > 9}}">{{imgArr.length}}</text>
+    </view>
+    <view class="text-container">
+        <text >{{mainTitle}}</text>
+    </view>
+</view>

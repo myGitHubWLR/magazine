@@ -1,0 +1,7 @@
+<!--components/bigImg/cmp.wxml-->
+
+<!-- 陈道明img 穿夹克，可以飞起来 -->
+<view class="container">
+    <image class="image" mode="widthFix" src="{{imgSrc}}" />
+    <text class="text">{{mainTitle}}</text>
+</view>

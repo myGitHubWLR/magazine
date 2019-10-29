@@ -1,0 +1,7 @@
+<!--components/like/cmp.wxml-->
+
+<!-- 空心圆/实心圆的切换 -->
+<view class="container">
+    <image class="image" src="image/circle.png" catch:tap="onLike" hidden="{{like}}"/>
+    <image class="image" src="image/circle_fill.png" catch:tap="onLike" hidden="{{!like}}"/>
+</view>

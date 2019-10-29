@@ -1,0 +1,3 @@
+<!--components/tag/cmp.wxml-->
+<!-- 方块小标题组件 -->
+<view class="container" catch:tap="onTap">{{tag}}</view>
