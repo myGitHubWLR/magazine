@@ -5,17 +5,17 @@ import {Request} from "../utils/request.js"
 class IndexModel extends Request {
     getArticleList (magazineId=0,start=0) {
         return this.getData({
-            url:`/getIndexArticleList/${magazineId}/${start}`
+            url:`/getIndexArticleList/${magazineId}/${start}.json`
         })
     }
     getMarkTypeList(magazineId=0) {
         return this.getData({
-            url:`/getMarkTypeList/${magazineId}`
+            url:`/getMarkTypeList/${magazineId}.json`
         })
     }
     getRecommendInfo(magazineId=0) {
         return this.getData({
-            url:`/getRecommendInfo/${magazineId}`
+            url:`/getRecommendInfo/${magazineId}.json`
         })
     }
 }

@@ -6,6 +6,12 @@
     "pages/catalog/catalog",
     "pages/search/search"
   ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "杂志阅读",
+    "navigationBarTextStyle": "white"
+  },
   "tabBar": {
     "selectedColor": "#000",
     "list": [
@@ -28,5 +34,6 @@
         "selectedIconPath": "images/tab/mark.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

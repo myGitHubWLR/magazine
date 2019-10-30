@@ -1,7 +1,7 @@
 
 class Request {
-    baseUrl = 'https://easy-mock.com/mock/5bd149fab36f2c5eac3a9274/QM_magazine'
-   
+    // baseUrl = 'https://easy-mock.com/mock/5bd149fab36f2c5eac3a9274/QM_magazine'
+    baseUrl = 'http://api.duyiedu.com/zazhi/QM_magazine'
     getData({url, method='GET', data={}}) {
         return new Promise( (resolve, reject) => {
             wx.request({
